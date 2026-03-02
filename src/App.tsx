@@ -1,7 +1,6 @@
-function App() {
-  return (
-    <></>
-  )
-}
+import GameScreen from "./components/screens/game/game-screen";
+import SplashScreen from "./components/screens/splash/splash-screen";
 
-export default App
+export default function App() {
+  return <></>;
+}
