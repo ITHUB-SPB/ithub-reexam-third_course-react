@@ -51,7 +51,7 @@ _(контрольная точка #2)_
   field: [
     [null, null, null],
     [null, null, null],
-    ["null", null, null]
+    [null, null, null]
   ],
   state: "idle"
 }

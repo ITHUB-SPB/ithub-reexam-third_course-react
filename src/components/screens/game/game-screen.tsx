@@ -4,6 +4,16 @@ import Button from "../../ui/button/button";
 
 import classes from "./game-screen.module.css";
 
-export default function GameScreen() {
-  return <></>;
+type GameScreenProps = {
+  setState: (newState: string) => void,
+  state: string
+}
+
+export default function GameScreen({ state, setState }: GameScreenProps) {
+  return (
+    <main className={classes.main}>
+      <Legend />
+      <Board />
+    </main>
+  );
 }

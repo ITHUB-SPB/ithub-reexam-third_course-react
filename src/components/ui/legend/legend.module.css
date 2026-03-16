@@ -1,0 +1,20 @@
+.legend {
+    display: flex;
+    gap: 14dvw;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.legend__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 10dvw;
+}
+
+.legend__icon {
+    width: 100%;
+    height: auto;
+}
