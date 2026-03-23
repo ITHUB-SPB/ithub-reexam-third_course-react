@@ -3,9 +3,9 @@ import GameScreen from "./components/screens/game/game-screen";
 import SplashScreen from "./components/screens/splash/splash-screen";
 
 export default function App() {
-  const [state, setState] = useState("progress")
+  const [state, setState] = useState("x-move")
 
-  return state === "idle" 
-    ? <SplashScreen setState={setState} /> 
+  return state === "idle"
+    ? <SplashScreen setState={setState} />
     : <GameScreen state={state} setState={setState} />;
 }

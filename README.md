@@ -47,7 +47,6 @@ _(контрольная точка #2)_
 ```ts
 {
   players: { Player1: "x", Player2: "o" },
-  currentMove: null
   field: [
     [null, null, null],
     [null, null, null],
@@ -62,13 +61,12 @@ _(контрольная точка #2)_
 ```ts
 {
   players: { Player1: "x", Player2: "o" },
-  currentMove: "Player1"
   field: [
     [null, null, null],
     [null, null, null],
-    ["null", null, null]
+    [null, null, null]
   ],
-  state: "progress"
+  state: "x-move"
 }
 ```
 
@@ -77,13 +75,12 @@ _(контрольная точка #2)_
 ```ts
 {
   players: { Player1: "x", Megamozg: "o" },
-  currentMove: "Megamozg"
   field: [
     [null, "x", "x"],
     [null, "o", null],
-    ["null", null, null]
+    [null, null, null]
   ],
-  state: "progress"
+  state: "o-move"
 }
 ```
 
@@ -92,7 +89,6 @@ _(контрольная точка #2)_
 ```ts
 {
   players: { Player1: "x", Megamozg: "o" },
-  currentMove: "Player1"
   field: [
     ["x", "x", "x"],
     [null, "o", null],
@@ -107,12 +103,11 @@ _(контрольная точка #2)_
 ```ts
 {
   players: { Player1: "o", Megamozg: "x" },
-  currentMove: "Megamozg"
   field: [
     [null, null, null],
     [null, null, null],
     ["null", null, null]
   ],
-  state: "progress"
+  state: "x-move"
 }
 ```

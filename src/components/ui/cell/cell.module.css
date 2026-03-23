@@ -1,0 +1,11 @@
+.cell {
+    background-color: #C9F9FC;
+    border: 8px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.cell:disabled {
+    cursor: default;
+    pointer-events: none;
+}
