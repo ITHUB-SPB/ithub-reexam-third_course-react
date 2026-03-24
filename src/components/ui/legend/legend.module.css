@@ -12,9 +12,5 @@
     gap: 10px;
     align-items: center;
     width: 10dvmin;
-}
-
-.legend__icon {
-    width: 100%;
     height: auto;
 }

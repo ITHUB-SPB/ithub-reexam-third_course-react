@@ -10,5 +10,5 @@ type IconType = {
 export default function Icon({ variant }: IconType) {
   const iconSrc = variant === "x" ? xIcon : oIcon
 
-  return <img src={iconSrc} alt="icon" />;
+  return <img className={classes.icon} src={iconSrc} alt="icon" />;
 }

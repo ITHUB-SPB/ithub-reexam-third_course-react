@@ -1,8 +1,10 @@
 .cell {
-    background-color: #C9F9FC;
+    background-color: #eafcfd;
     border: 8px solid black;
     border-radius: 16px;
     cursor: pointer;
+    width: calc((50dvmin - 90px - 9px * 2) / 3);
+    height: calc((50dvmin - 90px - 9px * 2) / 3);
 }
 
 .cell:disabled {

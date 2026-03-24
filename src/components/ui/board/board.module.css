@@ -3,10 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 9px;
-    width: 50dvmin;
-    height: 50dvmin;
-    padding: 90px;
-    border: 20px solid black;
-    box-shadow: -20px 20px black;
+    padding: 5dvmin;
+    border: 1dvmin solid black;
     border-radius: 50px;
 }

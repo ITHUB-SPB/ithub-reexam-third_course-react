@@ -2,12 +2,12 @@ import { useState } from "react";
 import Cell from "../cell/cell";
 
 import classes from "./board.module.css";
+import type { State, CellValue } from "../../../types";
 
-type CellValue = null | 'x' | 'o'
 
 type BoardProps = {
-  setState: React.Dispatch<React.SetStateAction<string>>,
-  state: "x-wins" | "o-wins" | "x-move" | "o-move" | "draw"
+  setState: React.Dispatch<React.SetStateAction<State>>,
+  state: State
 }
 
 export default function Board({ state, setState }: BoardProps) {
@@ -17,7 +17,20 @@ export default function Board({ state, setState }: BoardProps) {
     [null, null, null],
   ])
 
-  const currentMove = state.endsWith('move') ? state[0] : null;
+  const getCurrentMove = () => {
+    return "x"
+  }
+
+  const handleClick = () => {
+    updateBoard(previousState => {
+      const newState = [...previousState]
+      return newState
+    })
+    setState(state => {
+      return state
+    })
+  }
+
 
   return (
     <section className={classes.board}>
@@ -26,23 +39,7 @@ export default function Board({ state, setState }: BoardProps) {
           <Cell
             key={`cell_${rowIx}_${colIx}`}
             value={value}
-            onClick={() => {
-              updateBoard(previousState => {
-                const newState = [...previousState]
-                newState[rowIx][colIx] = currentMove as "x" | "o"
-                return newState
-              })
-
-              setState(state => {
-                if (!state.endsWith('move')) {
-                  return state
-                }
-                if (state === "x-move") {
-                  return "o-move"
-                }
-                return "x-move"
-              })
-            }}
+            onClick={handleClick}
           />)
       })}
     </section>
