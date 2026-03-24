@@ -18,9 +18,7 @@
 
 ### Дизайн
 
-Базовый дизайн уже реализован. Для доработок и вдохновения можете пользоваться [макетом](https://www.figma.com/design/1rKJjzNZJ7BL06XaFqk8Xj/Tic-Tac-Toe--Community-?node-id=0-1&p=f&t=2bQ6SV4kGJmD35Qa-0) 
-
-Повторять макет в точности не требуется.
+Базовый дизайн уже реализован. Для доработок и вдохновения можете пользоваться [макетом](https://www.figma.com/design/1rKJjzNZJ7BL06XaFqk8Xj/Tic-Tac-Toe--Community-?node-id=0-1&p=f&t=2bQ6SV4kGJmD35Qa-0). Повторять макет в точности не требуется.
 
 ### Компоненты
 
@@ -38,16 +36,14 @@
 
 Состояние игры должно храниться без дополнительных библиотек. Можно использовать лишь следующие встроенные хуки: 
 
-- useState
-- useEffect / useLayoutEffect
-- useReducer
-- useEffect
-- useCallback
+- useState / useReducer,
+- useEffect / useLayoutEffect,
+- useCallback.
 
 Состояние игры включает в себя:
 
-- состояние поля (двумерный массив состояний ячеек поля)
-- статус (x-wins, o-wins, draw, x-move, o-move)
+- состояние поля (двумерный массив состояний ячеек поля);
+- статус (x-wins, o-wins, draw, x-move, o-move).
 
 Поле при первом запуске (либо перезапуске) имеет следующий вид:
 
